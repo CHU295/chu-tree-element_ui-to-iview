@@ -165,7 +165,7 @@
       },
 
       handleCheckChange(ev) {
-        this.tree.$emit('check', this.node.data, this.node, this);
+        this.tree.$emit('check', ev, this.node.data, this.node);
         this.node.setChecked(ev, !this.tree.checkStrictly);
       },
 
