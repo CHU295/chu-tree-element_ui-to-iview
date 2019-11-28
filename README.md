@@ -9,6 +9,8 @@ element-ui tree树形控件源码抽离，适配iview，修改了源码，方便
 ##使用方法
 
 ```
+npm i chu-tree-iview
+
 import chuView from 'chu-tree-iview'
 import iview from 'iview'
 
