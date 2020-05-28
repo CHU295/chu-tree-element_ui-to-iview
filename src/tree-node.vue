@@ -36,8 +36,8 @@
 </template>
 
 <script>
-  import CollapseTransition from 'iview/src/components/base/collapse-transition';
-  import emitter from 'iview/src/mixins/emitter';
+  import CollapseTransition from 'view-design/src/components/base/collapse-transition';
+  import emitter from 'view-design/src/mixins/emitter';
 
   const prefixCls = 'ivu-tree';
 
@@ -165,6 +165,7 @@
       },
 
       handleCheckChange(ev) {
+        this.tree.$emit('check', ev, this.node.data, this.node);
         this.node.setChecked(ev, !this.tree.checkStrictly);
       },
 
