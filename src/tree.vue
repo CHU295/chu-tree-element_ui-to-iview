@@ -16,8 +16,8 @@
 
 <script>
   import TreeStore from './model/tree-store';
-  import {t} from 'iview/src/locale';
-  import emitter from 'iview/src/mixins/emitter';
+  import {t} from 'view-design/src/locale';
+  import emitter from 'view-design/src/mixins/emitter';
   import ElTreeNode from './tree-node.vue'
 
   const prefixCls = 'ivu-tree';
